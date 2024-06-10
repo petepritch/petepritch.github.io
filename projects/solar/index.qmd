@@ -1,0 +1,18 @@
+---
+title: "Solar Flare Analysis"
+description: |
+    In this study, various classical time series methods are used in attempt to capture the implicit behavior in sunspot activity
+date: 2024-03-15
+image: sunspots.png
+draft: false
+--- 
+
+[![](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/petepritch/solar-weather-dynamics-time-series)
+
+**Full report can be viewed [here](https://ionides.github.io/531w24/midterm_project/project09/blinded.html)!**
+
+------
+
+Sunspots are regions on the Sun’s surface with significantly stronger magnetic fields, appearing visibly darker due to lower temperatures compared to surrounding areas. These spots often come in pairs with opposite magnetic polarities and are composed of a darker umbra surrounded by a lighter penumbra. Monitoring and forecasting sunspots are crucial as they correlate strongly with solar phenomena like Coronal Mass Ejections (CMEs) and solar flares. These events can disrupt Earth’s magnetic fields, affecting satellite technology and communication systems such as GPS, highlighting the importance of sunspot activity in technological reliability and safety.
+
+Sunspot activity also influences Earth's climate, as evidenced by historical events like the Maunder Minimum, which coincided with the 'Little Ice Age' from 1645 to 1715. The relationship between sunspots and climate change is complex, showing minimal effects on short 11-year solar cycles but significant impacts over longer secular cycles of 100 to 200 years. Understanding these long-term trends is vital for predicting climate change and preparing for its consequences. Given the technological and climatic implications, robust research using various statistical models, including time series methods, is essential to capture and predict sunspot behavior and its broader impacts.

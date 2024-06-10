@@ -1,0 +1,110 @@
+---
+title: "CV"
+---
+
+# Contact Information
+
+- **Name:** Pete Pritchard
+- **Email:** petep at umich dot edu
+- **Phone:** (423) eight hundred-1887
+
+------
+
+# Experience
+
+### Software Engineering Intern, NASA
+**Washington, DC** | *June 2024 – August 2024*
+
+- Served in a hybrid role between SWE, data scientist, and project manager
+- Led a small, diverse team of interns with expertise in software engineering, UI/UX, strategic communication, and
+data science/engineering to enhance reserach and testing capabilties of national wind tunnel facilities
+- Used Python to build real-time data applications of operational and test data to provide comprehensive
+visualizations, reveal patterns and drive more effective decision-making and business outcomes
+- Engineered an advanced analytics platform using Python, Google Cloud Storage, and Firestore, deployed via
+Docker on an existing NASA cloud environment
+
+### Data Science Intern, NASA
+**Washington, DC** | *June 2023 – August 2023*
+
+- Developed a 10-year demand forecast model and deployed it along with a dashboard via Python and Plotly Dash
+- Developed an API wrapper for a 20+ year old SAP database to allow financial managers quickly access budget reports and financial data
+- Added 30+ SQL queries to codebase and helped design demand database schema
+- Assisted with the creation of performance and value scoring system and score cards for wind tunnel facilities
+
+### Graduate Student Instructor, University of Michigan
+**Ann Arbor, MI** | *August 2023 – Present*
+
+- Leading labs, grading assignments, and providing aid to 60+ students - Introduction to Stats and Data Analysis
+- Managing canvas page, scheduling meetings and serving as primary communicator between students and professors
+- Received high student satisfaction reports and promoted to Graduate Student Mentor after one semester
+
+### Research Assistant, University of Tennessee
+**Chattanooga, TN** | *Junuary 2023 – May 2023*
+
+- Surveyed statistical and ML methods to predict the spread of viruses using Google Trends and Covid-19 data
+- Developed an LSTM deep learning networks model with the use of R (Keras, Tensorflow)
+- Achieved higher model performances compared with classic time series approaches (VAR, ARIMA)
+- Presented findings at UT, Chattanooga’s research dialogue conference
+
+### Research Assistant, University of Tennessee
+**Chattanooga, TN** | *August 2022 – January 2023*
+
+- Assisted a project that formulated a new mixed-integer linear model to optimally locate Emergency Medical Service vehicle facilities to decrease response time, and ultimately save lives
+- My contributions included data assembly, running and analyzing tests on GPU clusters, and writing the report
+- The solution resulted in a 12.38 – 22.02 percent increase in overall coverage
+
+### Data Analytics Intern, Stray Dog Designs
+**Chattanooga, TN** | *May 2020 – August 2020*
+
+- Analyzed campaign performance metrics to enhance social media marketing efforts
+- Created custom dashboards and automated weekly reports with Google Analytics and Data Studio
+- Developed marketing mix models and clustering algorithms for customer segmentation to boost ROA
+
+------
+
+# Education
+
+### MS, Applied Statistics
+**University of Michigan, Ann Arbor** | *Month Year – Month Year*
+
+- Coursework: Regression, Probability Theory, Statistical Inference, Machine Learning, Time Series Analysis, Data Structures and Algorithms, Bayesian Modeling, Natural Language Processing, Design of Experiments
+
+### BS, Applied Mathematics & Economics
+**University of Tennessee, Chattanooga** | *August 2020 – May 2023*
+
+------
+
+# Skills
+
+- **Languages:** Python, SQL, R, C++, Java, HTML/CSS
+- **Developer Tools:** Git, Google Cloud Platform, Airflow, DBT, Terraform, Linux
+- **Libraries:** Pandas, NumPy, PySpark, PyTorch, Tensorflow, Keras, Scikit-learn, Plotly
+- **Modeling:** Supervised Learning, Neural Networks, Clustering, Time Series, Hidden Markov Process, Monte Carlo Methods
+- **Soft Skills:** Spanish (Working level), Communication, Leadership
+
+------
+
+# Awards and Honors 
+
+### John C. Stophel Distinguished Student Award
+**University of Tennesee, Chattanooga** | *December 2022*
+
+- The John C. Stophel Distinguished Student Award is presented annually to recognize high potential business students who have made significant and meaningful contributions to UTC, the Gary W. Rollins College of Business and their communities while maintaining a strong academic record.The John C. Stophel Distinguished Student Award is presented annually to recognize high potential business students who have made significant and meaningful contributions to UTC, the Gary W. Rollins College of Business and their communities while maintaining a strong academic record.
+
+
+
+### Ziad Keilany Scholarship in Economics
+**University of Tennesee, Chattanooga** | *December 2022*
+
+
+### Joe & Rachael Decosimo Scholarship
+**University of Tennesee, Chattanooga** | *December 2022*
+
+------
+
+# References
+
+Available upon request.
+
+
+

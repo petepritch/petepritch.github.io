@@ -1,0 +1,29 @@
+{
+  "index.qmd": {
+    "index.html": "f33f910b"
+  },
+  "about.qmd": {
+    "about.html": "4ac83ac4"
+  },
+  "cv.qmd": {
+    "cv.html": "c8bc369a"
+  },
+  "projects.qmd": {
+    "projects.html": "4b3bf44c"
+  },
+  "projects/solar/index.qmd": {
+    "index.html": "6f297078"
+  },
+  "projects/pomp/index.qmd": {
+    "index.html": "83680f7a"
+  },
+  "projects/nhanes/index.qmd": {
+    "index.html": "af986ca7"
+  },
+  "projects/monteCarlo/index.qmd": {
+    "index.html": "53fc3144"
+  },
+  "projects/marcy/index.qmd": {
+    "index.html": "d0c78bf5"
+  }
+}

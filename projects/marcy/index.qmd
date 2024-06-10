@@ -1,0 +1,8 @@
+---
+title: "Marcy Bot"
+description: |
+    A discord fantasy football bot leveraging modern LLMs 
+date: 2024-06-01
+image: henry.jpg
+draft: false
+--- 
