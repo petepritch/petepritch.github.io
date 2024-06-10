@@ -1,0 +1,12 @@
+[
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/marcy/index.html",
+      "/projects/pomp/index.html",
+      "/projects/nhanes/index.html",
+      "/projects/solar/index.html",
+      "/projects/monteCarlo/index.html"
+    ]
+  }
+]

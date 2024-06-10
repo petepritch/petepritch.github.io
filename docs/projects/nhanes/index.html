@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2024-04-15">
+<meta name="description" content="Investigation of the presence of volatile organic compounds (VOCs) in human blood samples and their relationship with various levels of exposure to tobacco products">
+
+<title>Pete Pritchard - VOC Analysis</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Pete Pritchard</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../projects.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#methods-and-discussion" id="toc-methods-and-discussion" class="nav-link" data-scroll-target="#methods-and-discussion">Methods and Discussion</a>
+  <ul class="collapse">
+  <li><a href="#support-vector-machine" id="toc-support-vector-machine" class="nav-link" data-scroll-target="#support-vector-machine">Support Vector Machine</a></li>
+  <li><a href="#softmax-multi-class-logistic-regression" id="toc-softmax-multi-class-logistic-regression" class="nav-link" data-scroll-target="#softmax-multi-class-logistic-regression">Softmax (Multi-class Logistic) Regression</a></li>
+  <li><a href="#classification-trees" id="toc-classification-trees" class="nav-link" data-scroll-target="#classification-trees">Classification Trees</a></li>
+  </ul></li>
+  <li><a href="#concluding-remarks-reproducibility" id="toc-concluding-remarks-reproducibility" class="nav-link" data-scroll-target="#concluding-remarks-reproducibility">Concluding Remarks &amp; Reproducibility</a></li>
+  <li><a href="#appendix" id="toc-appendix" class="nav-link" data-scroll-target="#appendix">Appendix</a>
+  <ul class="collapse">
+  <li><a href="#the-distribution-of-vocs-across-different-response-levels" id="toc-the-distribution-of-vocs-across-different-response-levels" class="nav-link" data-scroll-target="#the-distribution-of-vocs-across-different-response-levels">The Distribution of VOC’s Across Different Response Levels</a></li>
+  <li><a href="#one-vs-one-svm-results" id="toc-one-vs-one-svm-results" class="nav-link" data-scroll-target="#one-vs-one-svm-results">One-vs-One SVM Results</a></li>
+  <li><a href="#coefficients-and-confusion-matrices-for-penalized-softmax-regression" id="toc-coefficients-and-confusion-matrices-for-penalized-softmax-regression" class="nav-link" data-scroll-target="#coefficients-and-confusion-matrices-for-penalized-softmax-regression">Coefficients and Confusion Matrices for Penalized Softmax Regression</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">VOC Analysis</h1>
+</div>
+
+<div>
+  <div class="description">
+    <p>Investigation of the presence of volatile organic compounds (VOCs) in human blood samples and their relationship with various levels of exposure to tobacco products</p>
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 15, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><a href="https://github.com/petepritch/volatile-organic-compound-analysis"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&amp;logo=github&amp;logoColor=white.png" class="img-fluid"></a></p>
+<p>Authors: Pete Pritchard, Omar Afifi, Xiangru Pan</p>
+<hr>
+<p>We investigate the presence of volatile organic compounds (VOCs) in human blood samples and their relationship with various levels of exposure to tobacco products. Our analysis demonstrates that, while not as exaggerated as might be expected, there is a significant relationship between VOC concentrations and exposure levels. By analyzing the results from our models, we also can draw conclusions about the difference in effect between second-hand and direct tobacco usage. We accomplish this objective by leveraging interpretable statistical learning models and thorough data analysis.</p>
+<hr>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Volatile Organic Compounds (VOCs) are organic chemicals that humans are frequently exposed to. VOCs are commonly found in directly ingestible products like tobacco, as well as non-ingestible items like paints and detergents. Studying VOC levels in humans is important for a number of reasons including health monitoring, disease diagnosis, environmental exposure assessment, and biological research. Moreover, specific VOC patterns or signals may be associated with particular diseases or illnesses, which allows for quick, non-invasive diagnostic practices. This can be particularly valuable in cases where traditional diagnostic techniques are invasive, costly, or impractical. Consequently, understanding the impact of human VOC exposure holds great promise for the betterment of patient care, disease control, and biomedical research.</p>
+<p>This analysis utilizes survey and blood sample data from the National Health and Nutritional Examination Survey (NHANES), provided by the Center for Disease Control (CDC). In particular, we analyze data pertaining to three primary VOCs commonly found in flammable tobacco products: Benzene, Ethyl-benzene, and Xylene, across various exposure levels (none, second-hand, direct). Using this analysis, we try to answer two fundamental questions: Do VOC concentrations have predictive power in classifying exposure levels? If so, which VOCs are more prevalent in smokers than in non-smokers, and how significant are the impacts of direct, as opposed to second-hand exposure?</p>
+<p>The first part of this report briefly describes the data we used and contains a brief description of our data-processing methods. We subsequently describe three classification models that we employed (Support Vector Machines, Softmax Regression, and Decision Trees.) Each section describes our motivation for utilizing the respective model and discusses any relevant peculiarities or challenges associated with the respective method. Each section also provides results and conclusions that can be garnered from each model. Our final sections are directed towards summarizing our findings, and discussing reproducability and future research endeavors.</p>
+<p>Our analysis focuses on interpretable classifiers: While these do not provide the greatest accuracy, we are more interested in understanding the separability between smoker groups in terms of blood VOC levels rather than achieving prediction benchmarks, as well as determining which VOCs’ precedence is indicative of frequent tobacco use/exposure. Hence, we have avoided complex and uninterpretable models like deep neural networks or, to a lesser extent, boosted models.</p>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<p>We utilize three datasets from NHANES: Cigarette Use [SMQ], Household Use [SMQFAM], and Volatile Organic Compounds Blood Tests [VOCWB]/[L04VOC]. We analyze a subset of the NHANES data that ranges from 1999-2018. Each participant’s blood test is linked to a survey response in the first two datasets, and these survey results form our response variable. In particular, participants were asked [1] if they currently regularly smoke, and [2] if they live with someone who regularly smokes. We grouped this into a single categorical response variable, ‘SMOKE’, which is interpreted according to the structure shown in <a href="#tbl-classes" class="quarto-xref">Table&nbsp;1</a>.</p>
+<div id="tbl-classes" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-classes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Class Description.
+</figcaption>
+<div aria-describedby="tbl-classes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 93%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>SMOKE</th>
+<th>Desciption</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>The participant does not smoke and does not live with anyone who smokes</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>The participant lives with someone who smokes, but does not smoke themselves</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>The participant directly smokes tobacco on a regular basis</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>There is, of course, substantial overlap between classes 1 and 2: I.e., some individuals who smoke also live with a fellow smoker. Such participants are labeled as ‘2’. This allows us to isolate the effect of second-hand vs direct exposure. Moreover, Models like logistic regression and support vector machines rely on a fundamental assumption of linear separability (or at least separability in some tractable feature space). Unfortunately, this does not seem to be the case in the VOC data, but separability can be improved when logarithmic transformations are applied to the data, see <a href="#fig-overall" class="quarto-xref">Figure&nbsp;1</a>. This is due to the small values of the data: VOC concentrations are, in general, quite minuscule, so logarithmic transformations help to exaggerate the differences around the origin, yielding greater sensitivity to small fluctuations, which aids in classification accuracy.</p>
+<p>A subsequent issue is class imbalances. (Most people do not smoke). Moreover, most of the difficulty in this problem involves correctly identifying second-hand smoke exposure, and this makes up a minority class. Consequently, it is easy to achieve accuracy by simply ignoring the small classes, which leads to deceptively good results. Due to these distributional inequalities, we up-weighted the smaller classes in all of our models to achieve a balanced training objective. Despite hurting predictive power, this provides a more robust and truthful analysis. A visualization of the predictive space can be found in the Appendix <a href="#fig-hist" class="quarto-xref">Figure&nbsp;5</a>, and a frequency count of each class can be viewed in <a href="#fig-overall" class="quarto-xref">Figure&nbsp;1</a>.</p>
+<div class="grid">
+<div class="g-col-6">
+<div id="fig-overall" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-overall-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./assets/data_plot1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-overall-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Introducing a log transformation helps separate the data. (only non-smokers vs smokers is shown to aid in visualization) The right hand figure is the un-transformed data.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="g-col-6">
+<p><img src="./assets/data_plot2.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="methods-and-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="methods-and-discussion">Methods and Discussion</h2>
+<section id="support-vector-machine" class="level3">
+<h3 class="anchored" data-anchor-id="support-vector-machine">Support Vector Machine</h3>
+<p>Our motivation for using support vector machines in this problem space is largely due to the natural geometric implications of effective SVM-oriented prediction. The idea of separability (even in higher dimensional spaces), provides a nice interpretation because high classification accuracy suggests that VOC levels differ (i.e.&nbsp;are separable) between response levels. We selected hyper-parameters for our SVM models using 5-fold cross-validation. Test scores were calculated from held-out test data (i.e.&nbsp;not validation data).</p>
+<div id="tbl-svm-1" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-svm-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: SVM Classification Report.
+</figcaption>
+<div aria-describedby="tbl-svm-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table">
+<thead>
+<tr class="header">
+<th>Class</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>F1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Non Smokers</td>
+<td>.85</td>
+<td>.81</td>
+<td>.83</td>
+</tr>
+<tr class="even">
+<td>SH Exposed</td>
+<td>.2</td>
+<td>.32</td>
+<td>.25</td>
+</tr>
+<tr class="odd">
+<td>Smokers</td>
+<td>.84</td>
+<td>.72</td>
+<td>.77</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>In conjunction with our log transformations, radial basis function (rbf) kernels provided superior performance over linear kernels. Our cross-validation-estimated optimal regularization parameter (<span class="math inline">\(C\)</span>) and influence parameter (<span class="math inline">\(\gamma\)</span>) were both 1. The tuned models achieved an accuracy of .70, (although accuracies north of 75 percent can be obtained by ignoring the imbalances). <a href="#tbl-svm-1" class="quarto-xref">Table&nbsp;2</a> shows metrics across individual classes, and <a href="#tbl-svm-2" class="quarto-xref">Table&nbsp;3</a> shows both micro (weighted) and macro (unweighted) averages.</p>
+<div id="tbl-svm-2" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-svm-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3: VM Averaged Outcomes Across all Response Levels.
+</figcaption>
+<div aria-describedby="tbl-svm-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Accuracy</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>F1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Unweighted Av.</td>
+<td>.7</td>
+<td>.63</td>
+<td>.62</td>
+<td>.62</td>
+</tr>
+<tr class="even">
+<td>Weighted Av.</td>
+<td>.7</td>
+<td>.76</td>
+<td>.71</td>
+<td>.73</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div class="grid">
+<div class="g-col-6">
+<div id="fig-svm-sub" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-svm-sub-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./assets/svm_conf_mat.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-svm-sub-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: (Right) Confusion matrix from the Classifier. (Left) Barchart illustrating the class imbal- ances.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="g-col-6">
+<p><img src="./assets/freq_counts.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Unsurprisingly, high classification accuracy is observed for smokers and non-smokers, but the classifiers do not perform well on the second hand-exposure group. Indeed, the recall score of .32 shows that the classifier is more or less unable to detect second-hand smokers, and the low precision score means that most of the positive predictions in this class were incorrect. The salient observation here is that the vast majority of mis-classification occurs when exposed individuals are mistaken by the model for smokers (204 vs.&nbsp;149). This suggests that VOC levels in individuals exposed to tobacco through second-hand contact may more closely resemble that of smokers than of non-smokers. In our follow-up analysis, we built models that only classify smokers vs.&nbsp;exposed, non-smokers vs.&nbsp;exposed, and non-smokers vs smokers. These models had accuracy scores of <span class="math inline">\(.70\)</span>, .<span class="math inline">\(78\)</span>, .<span class="math inline">\(91\)</span>, respectively, reaffirming that exposed individuals are more separable from non-smokers than they are from smokers. (See <a href="#tbl-svm-1v1" class="quarto-xref">Table&nbsp;6</a> in the Appendix for a summary of these results.) This analysis suggests that the effects of second-hand tobacco exposure are not negligible, and may actually be fairly significant, although more thorough statistical analysis would be needed to make a definitive conclusion regarding this.</p>
+</section>
+<section id="softmax-multi-class-logistic-regression" class="level3">
+<h3 class="anchored" data-anchor-id="softmax-multi-class-logistic-regression">Softmax (Multi-class Logistic) Regression</h3>
+<p>The second method we employed was softmax regression. Much like SVM’s, it is not the most powerful predictive model, but it does provide valuable interpretability that allows us to obtain some insight into the effects of tobacco exposure. We dropped the log transformation to maintain interpretability. We also considered penalization terms, but we found that penalization terms were not helpful, as they encouraged the models to further ignore the second-hand group. We only discuss the outcome of the unpenalized model, but results from penalized softmax regression can be found in the Appendix <a href="#tbl-m_reg_w_pen" class="quarto-xref">Table&nbsp;7</a>. A performance summary of the un-penalized model is provided in <a href="#tbl-softmax-results" class="quarto-xref">Table&nbsp;4</a>:</p>
+<div id="tbl-softmax-results" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-softmax-results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4: Softmax Regression Classification Report (Without Penalty).
+</figcaption>
+<div aria-describedby="tbl-softmax-results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table">
+<thead>
+<tr class="header">
+<th>Class</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>F1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Non Smokers</td>
+<td>.73</td>
+<td>.91</td>
+<td>.81</td>
+</tr>
+<tr class="even">
+<td>SH Exposed</td>
+<td>.32</td>
+<td>.25</td>
+<td>.28</td>
+</tr>
+<tr class="odd">
+<td>Smokers</td>
+<td>.72</td>
+<td>.58</td>
+<td>.64</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The model performs well in identifying non-smokers, with a high precision of 0.73 and recall of 0.91, indicating that it correctly identifies the majority of non-smokers while minimizing the number of false positives. However, its performance in predicting second-hand smokers is weaker, with a lower precision of 0.32 and recall of 0.25, indicating that it fails to capture a significant portion of actual second-hand smokers and often misclassifies other classes as second-hand smokers. For smokers, the model demonstrates moderate performance, with a precision of 0.72 and recall of 0.58, suggesting that it correctly identifies a large portion of smokers but may also misclassify some non-smokers or second-hand smokers as smokers.</p>
+<p>Our main motivation for using softmax regression was to obtain the coefficients, which provide valuable insight into which VOCs are more indicative of frequent tobacco use. The coefficients of the model are provided below in Table <a href="#tbl-m-reg-coeffs" class="quarto-xref">Table&nbsp;5</a>. Each row corresponds to a response level, and columns correspond to predictors. The coefficients represent the change in the log-odds of being in each smoking status category for a one-unit increase in the corresponding predictor variable, holding all other variables constant. For non-smokers, the odds of being classified as such decrease significantly with the first predictor variable (Benzene) <span class="math inline">\(e^{-11.8812258} \approx 0.000012\)</span> meaning that, for each additional nanogram of Benzene observed in a blood sample, the odds of being a non-smoker decrease by almost 100 percent. Additionally, higher values of the Ethyl-benzene decrease the odds of being a non-smoker by approximately 28.2 percent: <span class="math inline">\(e^{-0.33048418} \approx  0.718\)</span>, so that the impact Ethyl-benzene is not as significant as the impact of Benzene. Conversely, the presence of an additional nanogram of Xylene actually slightly increases the odds of being a non-smoker by about 24.9 percent. However, this negative relationship may be due to colinearity with other predictors. (For example, the direction of the relationship may change if we remove Benzene from the model, or the coefficient of Ethyl-Benzene may increase). Similar interpretations can be made for predicting second-hand smokers and smokers, with higher Benzene and Ethyl-benzene levels being associated with increased odds of being in the exposed/smoking classes, and higher Xylene levels having the opposite interpretation.</p>
+<p>The confusion matrix <a href="#fig-softmax-mat" class="quarto-xref">Figure&nbsp;3</a> shows us how the model performs across each class. Similar to the SVM, it does well in classifying smokers and non-smokers but performs more poorly in trying to classify the second-hand group. One interesting difference is that, whereas the SVM mostly miss-classified this group as smokers, this model more commonly makes the opposite error. This calls into question how severe the effects of second-hand exposure are. We believe this difference is due to the use of r.b.f. kernels in the SVM’s: with more dimensionality, the differences between second-hand smokers and non-smokers may become more pronounced, but these differences are too minute to be picked up by linear decision boundaries.</p>
+<div id="fig-softmax-mat" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-softmax-mat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./assets/softmax_mat.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-softmax-mat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Confusion Matrix for Softmax Regression.
+</figcaption>
+</figure>
+</div>
+<div id="tbl-m-reg-coeffs" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-m-reg-coeffs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;5: Softmax Regression Coefficients.
+</figcaption>
+<div aria-describedby="tbl-m-reg-coeffs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table">
+<thead>
+<tr class="header">
+<th>Class</th>
+<th>Benzene</th>
+<th>Ethylbenzene</th>
+<th>Xylene</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Non Smokers</td>
+<td>-11.8812258</td>
+<td>-0.33048418</td>
+<td>0.22244872</td>
+</tr>
+<tr class="even">
+<td>SH Exposed</td>
+<td>3.6394399</td>
+<td>-0.46673514</td>
+<td>0.17573673</td>
+</tr>
+<tr class="odd">
+<td>Smokers</td>
+<td>8.2417859</td>
+<td>0.79721931</td>
+<td>-0.39818545</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="classification-trees" class="level3">
+<h3 class="anchored" data-anchor-id="classification-trees">Classification Trees</h3>
+<p>For our final model, we elect to implement a decision tree classifier. Decision trees are popular for a wide variety of reasons, but our primary motive is interpretability and the ability to determine which features have the most importance. We are not just concerned with predicting a class for a particular terminal node region; we also want to understand the distribution of classes among the training data points that fall into that region. Similar to the SVM process, we set our decision tree’s hyperparameters by 5-fold validation, and error metrics were calculated using a seperate test set.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Accuracy</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>F1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Unweighted Av.</td>
+<td>.71</td>
+<td>.61</td>
+<td>.59</td>
+<td>.56</td>
+</tr>
+<tr class="even">
+<td>Weighted Av.</td>
+<td>.71</td>
+<td>.87</td>
+<td>.71</td>
+<td>.77</td>
+</tr>
+</tbody>
+</table>
+<p>Akin to our results from previous models, prediction accuracy for those in the exposed class is much weaker than those in the smoker and non-smoker classes. <a href="#fig-overall-tree" class="quarto-xref">Figure&nbsp;4</a> depicts a feature importance plot, a visualization that provides an understanding of how significant each feature is to the model’s decision-making process. The metric used to calculate how much each feature contributes to our model’s prediction accuracy is based on Gini impurity. We can see that Xylene is clearly favored by our tree’s decision process. We assume this is consistent with the discovery of the negative relationship between Xylene and non-smokers that was found in our multinomial regression model. Often, decision trees are biased towards features that take on a large range of values relative to other predictors, but this is not made immediately obvious by what is shown by the histograms in <a href="#fig-hist" class="quarto-xref">Figure&nbsp;5</a>. Upon further examination, we speculate that Xylene’s influence stems from having a larger proportion of observation greater than 0.4 ng/mL compared to Ethyl-benzene and Benzene, however, further statistical analysis is required to confirm this hypothesis.</p>
+<div class="grid">
+<div class="g-col-6">
+<div id="fig-overall-tree" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-overall-tree-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./assets/feature_imp.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-overall-tree-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Feature Importance plot and Confusion Matrix for Decision Tree Classifie
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="g-col-6">
+<p><img src="./assets/conf_mat.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="concluding-remarks-reproducibility" class="level2">
+<h2 class="anchored" data-anchor-id="concluding-remarks-reproducibility">Concluding Remarks &amp; Reproducibility</h2>
+<p>Our analysis shows that there is a clear (mostly positive) relationship between increased VOC levels and tobacco exposure. This is demonstrated by achieving reproducible statistical models that achieve predictive accuracy using VOC concentrations as predictors. While the differences in effect between non-exposure and direct exposure is stark, there are less clear and even contradictory conclusions that can be drawn regarding the effects of second-hand exposure. In particular, SVM predictions suggest that the distinction between second-hand and non-exposure is minimal, whereas Decision Tree and Softmax Regression Methods suggest that individuals with second-hand exposure more closely resemble their smoking counterparts. This may be due to inconsistent data collection: One potential caveat in this analysis is our assumption that individuals who live with smokers are exposed to tobacco regularly. This may not be entirely accurate, and follow-up work may want to investigate the relationship between second-hand and direct exposure more closely by isolating for the nature of the exposure (for example, distinguishing between participants who live with a smoker who smokes indoors, versus those who live with a more considerate smoker.) Another possibility for follow-up work is to examine whether or not the usage of r.b.f. kernels in SVM classifiers aids in this behavior, and attempt to identify which aspects of data contribute to this phenomena.</p>
+<p>All of our code can be found on <a href="https://github.com/petepritch/STATS-503-Project">github</a>.</p>
+</section>
+<section id="appendix" class="level2">
+<h2 class="anchored" data-anchor-id="appendix">Appendix</h2>
+<section id="the-distribution-of-vocs-across-different-response-levels" class="level3">
+<h3 class="anchored" data-anchor-id="the-distribution-of-vocs-across-different-response-levels">The Distribution of VOC’s Across Different Response Levels</h3>
+<div id="fig-hist" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hist-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./assets/data_hist.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hist-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Distributions of the three VOC’s within different response levels: A square root transformation is applied to aid with visualization.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="one-vs-one-svm-results" class="level3">
+<h3 class="anchored" data-anchor-id="one-vs-one-svm-results">One-vs-One SVM Results</h3>
+<div id="tbl-svm-1v1" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-svm-1v1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6: Accuracy for one-vs-one SVM Classifiers. Note: In this case, balances are imposed, so percision, recall, and F1 reduce to just accuracy scores.
+</figcaption>
+<div aria-describedby="tbl-svm-1v1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Accuracy (With Imbalance Correction)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Smoker vs.&nbsp;Non-Smoker</td>
+<td>.91</td>
+</tr>
+<tr class="even">
+<td>Non-Smoker vs.&nbsp;Exposed</td>
+<td>.78</td>
+</tr>
+<tr class="odd">
+<td>Exposed vs.&nbsp;Smoker</td>
+<td>.70</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div class="grid">
+<div class="g-col-4">
+<div id="fig-svm-1v1" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-svm-1v1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./assets/svm_1v1.1.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-svm-1v1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Confusion Matrices for one-vs-one SVM Classifiers.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="g-col-4">
+<p><img src="./assets/svm_1v1.2.png" class="img-fluid"></p>
+</div>
+<div class="g-col-4">
+<p><img src="./assets/svm_1v1.3.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="coefficients-and-confusion-matrices-for-penalized-softmax-regression" class="level3">
+<h3 class="anchored" data-anchor-id="coefficients-and-confusion-matrices-for-penalized-softmax-regression">Coefficients and Confusion Matrices for Penalized Softmax Regression</h3>
+<p>This Section contains some figures and tables showing the outcome of penalizing our softmax model from section 3.2. Note the stark drop in performance for the second-hand group (in particular the low precision and recall scores).</p>
+<div id="tbl-m_reg_w_pen" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-m_reg_w_pen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;7: Multinomial Regression Classification Report (With Penalty).
+</figcaption>
+<div aria-describedby="tbl-m_reg_w_pen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table">
+<thead>
+<tr class="header">
+<th>Class</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>F1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Non Smokers</td>
+<td>.69</td>
+<td>.94</td>
+<td>.81</td>
+</tr>
+<tr class="even">
+<td>SH Exposed</td>
+<td>.27</td>
+<td>.01</td>
+<td>.01</td>
+</tr>
+<tr class="odd">
+<td>Smokers</td>
+<td>.68</td>
+<td>.78</td>
+<td>.73</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="tbl-coeff-ridge" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-coeff-ridge-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;8: Multinomial Regression Coefficients.
+</figcaption>
+<div aria-describedby="tbl-coeff-ridge-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table">
+<thead>
+<tr class="header">
+<th>Class</th>
+<th>Benzene</th>
+<th>Ethylbenzene</th>
+<th>Xylene</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Non Smokers</td>
+<td>-15.59127689</td>
+<td>0.47948689</td>
+<td>-0.0909995</td>
+</tr>
+<tr class="even">
+<td>SH Exposed</td>
+<td>5.32591981</td>
+<td>-2.03059051</td>
+<td>0.7141749</td>
+</tr>
+<tr class="odd">
+<td>Smokers</td>
+<td>10.26535708</td>
+<td>1.55110361</td>
+<td>-0.6231754</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./assets/conf_mat_penLG.png" class="img-fluid figure-img"></p>
+<figcaption>Confusion Matrix for Penalized Softmax Regression.</figcaption>
+</figure>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Copyright 2024, Pete Pritchard</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This website is built with {{&lt; fa heart "a heart" &gt;}}</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
