@@ -14,6 +14,8 @@ about:
           url: https://www.instagram.com/petepritch/
         - text: "{{< fa envelope >}} Email"
           url: mailto:petep@umich.edu
+        - text: "{{< fa film >}} Letterboxd"
+          url: https://letterboxd.com/petepritch/
 image: assets/me.jpeg
 comments: false
 ---
