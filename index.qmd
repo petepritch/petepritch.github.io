@@ -22,9 +22,9 @@ comments: false
 
 ### Bio
 
-I'm a second year [Masters of Applied Statistics](https://lsa.umich.edu/stats/masters_students/mastersprograms/applied-stats-masters-program.html) student at the University of Michigan, Ann Arbor. I obtained Bachelors degrees in Economics and Applied Mathematics at the University of Tennessee, Chattanooga. And, before that, I spent four years living in Nothern Spain, studying Marketing part-time at the University of Navarra (but mainly traveling and learning more about different cultures and myself). 
+I'm a second year [Masters of Applied Statistics](https://lsa.umich.edu/stats/masters_students/mastersprograms/applied-stats-masters-program.html) student at the University of Michigan, Ann Arbor. I obtained Bachelor's degrees in Economics and Applied Mathematics at the University of Tennessee, Chattanooga. And, before that, I spent four years living in Northern Spain, studying Marketing part-time at the University of Navarra (but mainly traveling and learning more about different cultures and myself). 
 
-Currently (and for the second summer in a row), I am engineering advanced analytics platforms for interal usgae at NASA's Glenn, Ames, and Langley Research Centers. I primarlily use Python to build real-time data applications of operational and test data to provide comprehensive
+Currently (and for the second summer in a row), I am engineering advanced analytics platforms for internal usage at NASA's Glenn, Ames, and Langley Research Centers. I primarily use Python to build real-time data applications of operational and test data to provide comprehensive
 visualizations, reveal patterns and drive more effective decision-making and business outcomes for a portfolio of wind tunnel facilities. Learn more about Aerosciences Evaluation and Test Capabilities Portfolio Office (AETC) [here!](https://www.nasa.gov/directorates/armd/aetc/)
 
 ### Research
@@ -37,6 +37,6 @@ While completing my studies at The University of Michigan, I have had the pleasu
 
 ### Personal Life
 
-I've spent my formative years in Tennessee, but have called Mexico and Spain home at various points in my life. Since 2023, I have lived in Ann Arbor, MI, but anticiapte that I move to a large, coastal city once I graduate from UofM.
+I've spent my formative years in Tennessee, but have called Mexico and Spain home at various points in my life. Since 2023, I have lived in Ann Arbor, MI, but anticipate that I will move to a large, coastal city once I graduate from UofM.
 
 In my freetime, I enjoy watching films, cooking, going to the gym, reading, and watching my favorite sports teams (Tennessee Titans and Atlanta Braves). I developed an obsession with movies around my 19th birthday, and since then I've watched an almost-alarming number of films, documentaries and series. If you are interested in a recommendation or would like to share your favorites, please do not hesitate to reach out by email!
