@@ -15,8 +15,7 @@ title: "CV"
 ### Software Engineering Intern, NASA
 **Washington, DC** | *June 2024 – August 2024*
 
-- Served in a hybrid role between SWE, data scientist, and project manager
-- Led a small, diverse team of interns with expertise in software engineering, UI/UX, strategic communication, and
+- Worked with a small, diverse team of interns with expertise in software engineering, UI/UX, strategic communication, and
 data science/engineering to enhance reserach and testing capabilties of national wind tunnel facilities
 - Used Python to build real-time data applications of operational and test data to provide comprehensive
 visualizations, reveal patterns and drive more effective decision-making and business outcomes
