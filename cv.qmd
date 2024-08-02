@@ -1,5 +1,6 @@
 ---
 title: "CV"
+css: styles.css
 ---
 
 # Contact Information
@@ -9,6 +10,8 @@ title: "CV"
 - **Phone:** (423) eight hundred-1887
 
 ------
+
+<a href="assets/petePritchardResume.pdf" class="btn btn-primary" download="petePritchardResume.pdf">Download Resume</a>
 
 # Experience
 
