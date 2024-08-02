@@ -28,7 +28,7 @@ Docker on an existing NASA cloud environment
 ### Data Science Intern, NASA
 **Washington, DC** | *June 2023 – August 2023*
 
-- Developed a 10-year demand forecast model and deployed it along with a dashboard via Python and Plotly Dash
+- Developed short-term and long-horizon demand forecast models and deployed it along with a dashboard via Python and Plotly Dash
 - Developed an API wrapper for a 20+ year old SAP database to allow financial managers quickly access budget reports and financial data
 - Added 30+ SQL queries to codebase and helped design demand database schema
 - Assisted with the creation of performance and value scoring system and score cards for wind tunnel facilities
