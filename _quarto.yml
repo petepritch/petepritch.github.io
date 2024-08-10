@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Pete Pritchard"
-  favicon: /Users/petepritchard/Documents/Projects/petepritch.github.io/assets/favicon-32x32.png
+  favicon: /assets/favicon-32x32.png
   navbar:
     left:
       - href: index.qmd
