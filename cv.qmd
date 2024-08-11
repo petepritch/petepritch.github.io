@@ -15,7 +15,7 @@ css: styles.css
 
 # Experience
 
-### Software Engineering Intern, NASA
+### Data Science Intern, NASA
 **Washington, DC** | *June 2024 – August 2024*
 
 - Worked with a small, diverse team of interns with expertise in software engineering, UI/UX, strategic communication, and
