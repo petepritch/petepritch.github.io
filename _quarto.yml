@@ -12,7 +12,9 @@ website:
       - href: cv.qmd
         text: CV
       - href: projects.qmd
-        text: Projects 
+        text: Projects
+  google-analytics: 
+    tracking-id: "G-TLBL8KD48W" 
   
   page-footer: 
     background: light
