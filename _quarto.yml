@@ -24,9 +24,9 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
+    include-after-body: "_includes/google-analytics.html"
     markdown:
       extensions: [shortcodes]
-
 
 
 
