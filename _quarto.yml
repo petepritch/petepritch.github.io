@@ -13,8 +13,7 @@ website:
         text: CV
       - href: projects.qmd
         text: Projects
-  google-analytics: 
-    tracking-id: "G-TLBL8KD48W" 
+  google-analytics: "G-TLBL8KD48W" 
   
   page-footer: 
     background: light
@@ -26,7 +25,6 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
-    include-after-body: "_includes/google-analytics.html"
     markdown:
       extensions: [shortcodes]
 
