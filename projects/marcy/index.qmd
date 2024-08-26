@@ -9,4 +9,4 @@ draft: false
 
 [![](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/petepritch/ff-league-app)
 
-# In progress!!!
+# Current status of project can be viewed on Github using the link above.
