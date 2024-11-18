@@ -1,0 +1,8 @@
+---
+title: "Advanced for Genomic Sequence Clustering at Scale"
+description: |
+    Implementing the MinHash Algorithm to approximate sequence pairwise similarity of massive datasets
+date: 2024-11-01
+image: peptideimg.jpg
+draft: false
+--- 

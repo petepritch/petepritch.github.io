@@ -24,7 +24,7 @@ comments: false
 
 I'm a second year [Masters of Applied Statistics](https://lsa.umich.edu/stats/masters_students/mastersprograms/applied-stats-masters-program.html) student at the University of Michigan, Ann Arbor. I obtained Bachelor's degrees in Economics and Applied Mathematics at the University of Tennessee, Chattanooga. And, before that, I spent four years living in Northern Spain, studying Marketing part-time at the University of Navarra (but mainly traveling and learning more about different cultures and myself). 
 
-Currently (and for the second summer in a row), I am engineering advanced analytics platforms for internal usage at NASA's Glenn, Ames, and Langley Research Centers. I primarily use Python to build real-time data applications of operational and test data to provide comprehensive
+This past summer (and for the second summer in a row), I engineerined advanced analytics platforms for internal usage at NASA's Glenn, Ames, and Langley Research Centers. I primarily used Python to build real-time data applications of operational and test data to provide comprehensive
 visualizations, reveal patterns and drive more effective decision-making and business outcomes for a portfolio of wind tunnel facilities. Learn more about Aerosciences Evaluation and Test Capabilities Portfolio Office (AETC) [here!](https://www.nasa.gov/directorates/armd/aetc/)
 
 ### Research
