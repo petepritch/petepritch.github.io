@@ -11,14 +11,14 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Marcy Bot\n\n\nA discord fantasy football bot leveraging modern LLMs\n\n\n\n\n\n\nJun 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAlternative Prey Hypothesis\n\n\nModeling the partially observed Markov process frameowork using a variation of the Lotka Voltera equations\n\n\n\n\n\n\nMay 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVOC Analysis\n\n\nInvestigation of the presence of volatile organic compounds (VOCs) in human blood samples and their relationship with various levels of exposure to tobacco products\n\n\n\n\n\n\nApr 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolar Flare Analysis\n\n\nIn this study, various classical time series methods are used in attempt to capture the implicit behavior in sunspot activity\n\n\n\n\n\n\nMar 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBSM Monte Carlo\n\n\nAn overview of the Black-Scholes European option pricing model and a solution using the Monte-Carlo stochastic modeling technique\n\n\n\n\n\n\nMay 15, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "DynaAlign\n\n\nDynaAlign is an open-sourced R package designed for scalable protein sequence clustering, visualization, and consensus sequence generation, leveraging high-performance…\n\n\n\n\n\n\nNov 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarcy Bot\n\n\nA discord fantasy football bot leveraging modern LLMs\n\n\n\n\n\n\nJun 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAlternative Prey Hypothesis\n\n\nModeling the partially observed Markov process frameowork using a variation of the Lotka Voltera equations\n\n\n\n\n\n\nMay 1, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVOC Analysis\n\n\nInvestigation of the presence of volatile organic compounds (VOCs) in human blood samples and their relationship with various levels of exposure to tobacco products\n\n\n\n\n\n\nApr 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolar Flare Analysis\n\n\nIn this study, various classical time series methods are used in attempt to capture the implicit behavior in sunspot activity\n\n\n\n\n\n\nMar 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBSM Monte Carlo\n\n\nAn overview of the Black-Scholes European option pricing model and a solution using the Monte-Carlo stochastic modeling technique\n\n\n\n\n\n\nMay 15, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/marcy/index.html",
     "href": "projects/marcy/index.html",
     "title": "Marcy Bot",
     "section": "",
-    "text": "In progress!!!"
+    "text": "Current status of project can be viewed on Github using the link above."
   },
   {
     "objectID": "projects/pomp/index.html",
@@ -88,6 +88,62 @@
     "href": "index.html",
     "title": "Pete Pritchard",
     "section": "",
-    "text": "Bio\nI’m a second year Masters of Applied Statistics student at the University of Michigan, Ann Arbor. I obtained Bachelor’s degrees in Economics and Applied Mathematics at the University of Tennessee, Chattanooga. And, before that, I spent four years living in Northern Spain, studying Marketing part-time at the University of Navarra (but mainly traveling and learning more about different cultures and myself).\nCurrently (and for the second summer in a row), I am engineering advanced analytics platforms for internal usage at NASA’s Glenn, Ames, and Langley Research Centers. I primarily use Python to build real-time data applications of operational and test data to provide comprehensive visualizations, reveal patterns and drive more effective decision-making and business outcomes for a portfolio of wind tunnel facilities. Learn more about Aerosciences Evaluation and Test Capabilities Portfolio Office (AETC) here!\n\n\nResearch\nMy research experience is rather broad. While an undergraduate student, I was fortunate enough to work under three different professors in various fields. First, I applied econometric methods to explore the dynamic connectedness of various currencies. Next, I assisted in the development of a mixed-integer linear model aimed to optimally locate emergency service vehicles. And lastly, I built deep neural network models to forecast the spread of infection diseases using trending Google Search key words.\n\n\nTeaching\nWhile completing my studies at The University of Michigan, I have had the pleasure of working as a Graduate Student Instructor for the Introduction to Statistics and Data Analysis undergraduate course (STATS 250). I’ve thoroughly enjoyed this aspect of my time as a graduate student, and would love to incorporate teaching into my work life from here on out. Some of the most interesting and influential people in my life are highschool teachers, and I would love to one day fill those shoes.\n\n\nPersonal Life\nI’ve spent my formative years in Tennessee, but have called Mexico and Spain home at various points in my life. Since 2023, I have lived in Ann Arbor, MI, but anticipate that I will move to a large, coastal city once I graduate from UofM.\nIn my freetime, I enjoy watching films, cooking, going to the gym, reading, and watching my favorite sports teams (Tennessee Titans and Atlanta Braves). I developed an obsession with movies around my 19th birthday, and since then I’ve watched an almost-alarming number of films, documentaries and series. If you are interested in a recommendation or would like to share your favorites, please do not hesitate to reach out by email!"
+    "text": "Bio\nI’m a second year Masters of Applied Statistics student at the University of Michigan, Ann Arbor. I obtained Bachelor’s degrees in Economics and Applied Mathematics at the University of Tennessee, Chattanooga. And, before that, I spent four years living in Northern Spain, studying Marketing part-time at the University of Navarra (but mainly traveling and learning more about different cultures and myself).\nThis past summer (and the one before that), I engineerined advanced analytics platforms for internal usage at NASA’s Glenn, Ames, and Langley Research Centers. I primarily used Python to build real-time data applications of operational and test data to provide comprehensive visualizations, reveal patterns and drive more effective decision-making and business outcomes for a portfolio of wind tunnel facilities. Learn more about Aerosciences Evaluation and Test Capabilities Portfolio Office (AETC) here!\n\n\nResearch\nMy research experience is rather broad. While an undergraduate student, I was fortunate enough to work under three different professors in various fields. First, I applied econometric methods to explore the dynamic connectedness of various currencies. Next, I assisted in the development of a mixed-integer linear model aimed to optimally locate emergency service vehicles. And lastly, I built deep neural network models to forecast the spread of infection diseases using trending Google Search key words.\nCurrently, I am collaborating with NASA’s Langley Research Center, researching methods to improve the performance of their open-source Sequential Monte Carlo Sampler library.\n\n\nTeaching\nWhile completing my studies at The University of Michigan, I have had the pleasure of working as a Graduate Student Instructor for the Introduction to Statistics and Data Analysis undergraduate course (STATS 250). I’ve thoroughly enjoyed this aspect of my time as a graduate student, and would love to incorporate teaching into my work life from here on out. Some of the most interesting and influential people in my life are highschool teachers, and I would love to one day fill those shoes.\n\n\nPersonal Life\nI’ve spent my formative years in Tennessee, but have called Mexico and Spain home at various points in my life. Since 2023, I have lived in Ann Arbor, MI, but anticipate that I will move to a large, coastal city once I graduate from UofM.\nIn my freetime, I enjoy watching films, cooking, going to the gym, reading, and watching my favorite sports teams (Tennessee Titans and Atlanta Braves). I developed an obsession with movies around my 19th birthday, and since then I’ve watched an almost-alarming number of films, documentaries and series. If you are interested in a recommendation or would like to share your favorites, please do not hesitate to reach out by email!"
+  },
+  {
+    "objectID": "projects/peptide/index.html",
+    "href": "projects/peptide/index.html",
+    "title": "DynaAlign",
+    "section": "",
+    "text": "DynaAlign is an open-sourced R package designed for scalable protein sequence clustering, visualization, and consensus sequence generation, leveraging high-performance algorithms for large-scale peptide data analysis.\n\n\n\n\nScalable Algorithms: Implements Needleman-Wunsch alignment and MinHash approximation for efficient similarity matrix computation.\nIntegration with Rcpp: High-performance C++ implementations for critical computational processes.\nNetwork-Based Clustering: Utilizes the igraph package for modular clustering and visualization of sequence networks.\nUser-Friendly Outputs: Provides consensus sequences and fine-tuned cluster sizes for downstream applications."
+  },
+  {
+    "objectID": "projects/peptide/index.html#description",
+    "href": "projects/peptide/index.html#description",
+    "title": "DynaAlign",
+    "section": "",
+    "text": "DynaAlign is an open-sourced R package designed for scalable protein sequence clustering, visualization, and consensus sequence generation, leveraging high-performance algorithms for large-scale peptide data analysis."
+  },
+  {
+    "objectID": "projects/peptide/index.html#key-features",
+    "href": "projects/peptide/index.html#key-features",
+    "title": "DynaAlign",
+    "section": "",
+    "text": "Scalable Algorithms: Implements Needleman-Wunsch alignment and MinHash approximation for efficient similarity matrix computation.\nIntegration with Rcpp: High-performance C++ implementations for critical computational processes.\nNetwork-Based Clustering: Utilizes the igraph package for modular clustering and visualization of sequence networks.\nUser-Friendly Outputs: Provides consensus sequences and fine-tuned cluster sizes for downstream applications."
+  },
+  {
+    "objectID": "projects/peptide/index.html#installation",
+    "href": "projects/peptide/index.html#installation",
+    "title": "DynaAlign",
+    "section": "Installation",
+    "text": "Installation\nThe package can be installed from GitHub.\n# install.packages(\"devtools\")\ndevtools::install_github(\"petepritch/DynaAlign\")"
+  },
+  {
+    "objectID": "projects/peptide/index.html#overview",
+    "href": "projects/peptide/index.html#overview",
+    "title": "DynaAlign",
+    "section": "Overview",
+    "text": "Overview\nDynaAlign addresses the challenge of clustering and analyzing large-scale peptide datasets for applications such as vaccine design and diagnostic assay development. The package integrates two primary similarity computation methods: exact sequence alignment using Needleman-Wunsch with multiple substitution matrices and an efficient, approximate MinHash-based approach. These are combined with network-based clustering via the igraph package, ensuring robust and scalable sequence clustering. Designed with performance and flexibility in mind, DynaAlign enables researchers to extract biologically meaningful insights from massive peptide datasets with unprecedented efficiency.\nThis software was developed for partial credit BIOSTAT 615 Statistical Computing @ The Univerity of Michigan, Ann Arbor."
+  },
+  {
+    "objectID": "projects/peptide/index.html#example-usage",
+    "href": "projects/peptide/index.html#example-usage",
+    "title": "DynaAlign",
+    "section": "Example Usage",
+    "text": "Example Usage\n# Load sequence data\ndata(evp_peparray)\nsequences &lt;- evp_peparray$PROBE_SEQUENCE\n\n# Create similarity matrix using MinHash\nX &lt;- similarityMH(sequences, k = 2, n_hash = 50)\n\n# Plot heatmap\nplot_similarity_matrix(X)\n\nlibrary(dplyr)\n\n# Load data\ndata(h3n2sample)\n\n# Generate clusters\nout.df &lt;- clusterbreak(h3n2sample$sequence[1:1000],\n                          size_max = 800,\n                          thresh_p = .8,\n                          sim_fn = function(x) similarityMH(x,k=4,n_hash=500))\n\n# Generate consensus sequence                          \nconsensus_seq &lt;- clusterconsensus(out.df$clustered_seq)\n \n# Default cluster plot\nconsensusplot(consensus_seq)"
+  },
+  {
+    "objectID": "projects/peptide/index.html#contributing",
+    "href": "projects/peptide/index.html#contributing",
+    "title": "DynaAlign",
+    "section": "Contributing",
+    "text": "Contributing\n\nFork (https://github.com/petepritch/DynaAlign/fork)\nCreate your feature branch (git checkout -b feature/fooBar)\nCommit your changes (git commit -am 'Add some fooBar')\nPush to the branch (git push origin feature/foobar)\nCreate a pull request"
+  },
+  {
+    "objectID": "projects/peptide/index.html#authors",
+    "href": "projects/peptide/index.html#authors",
+    "title": "DynaAlign",
+    "section": "Authors",
+    "text": "Authors\n\nPete Pritchard\nYulin Shao\nTroy Zhou"
   }
 ]

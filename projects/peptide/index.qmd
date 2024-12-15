@@ -51,7 +51,7 @@ X <- similarityMH(sequences, k = 2, n_hash = 50)
 plot_similarity_matrix(X)
 ```
 
-![](man/figures/heatmap.png)
+![](heatmap.png)
 
 ```r
 library(dplyr)
@@ -72,7 +72,7 @@ consensus_seq <- clusterconsensus(out.df$clustered_seq)
 consensusplot(consensus_seq)
 ```
 
-![](man/figures/cluster.png)
+![](cluster.png)
 
 ## Contributing
 
