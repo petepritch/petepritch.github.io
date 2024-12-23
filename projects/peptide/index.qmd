@@ -7,11 +7,8 @@ image: peptideimg.jpg
 draft: false
 --- 
 
-# DynaAlign - Scalable peptide sequence clustering and visualization in R
+# DynaAlign - Scalable peptide sequence clustering and visualization in R [![](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/petepritch/DynaAlign)
 
-## Description
-
-DynaAlign is an open-sourced R package designed for scalable protein sequence clustering, visualization, and consensus sequence generation, leveraging high-performance algorithms for large-scale peptide data analysis.
 
 ## Key Features
 
