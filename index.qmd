@@ -24,7 +24,7 @@ comments: false
 
 I'm a second year [Masters of Applied Statistics](https://lsa.umich.edu/stats/masters_students/mastersprograms/applied-stats-masters-program.html) student at the University of Michigan, Ann Arbor. I obtained Bachelor's degrees in Economics and Applied Mathematics at the University of Tennessee, Chattanooga. And, before that, I spent four years living in Northern Spain, studying Marketing part-time at the University of Navarra (but mainly traveling and learning more about different cultures and myself). 
 
-This past summer (and the one before that), I engineerined advanced analytics platforms for internal usage at NASA's Glenn, Ames, and Langley Research Centers. I primarily used Python to build real-time data applications of operational and test data to provide comprehensive
+This past summer (and the one before that), I engineered advanced analytics platforms for internal usage at NASA's Glenn, Ames, and Langley Research Centers. I primarily used Python to build real-time data applications of operational and test data to provide comprehensive
 visualizations, reveal patterns and drive more effective decision-making and business outcomes for a portfolio of wind tunnel facilities. Learn more about Aerosciences Evaluation and Test Capabilities Portfolio Office (AETC) [here!](https://www.nasa.gov/directorates/armd/aetc/)
 
 ### Research
@@ -35,7 +35,7 @@ Currently, I am collaborating with NASA's Langley Research Center, developing me
 
 ### Teaching
 
-While completing my studies at The University of Michigan, I have had the pleasure of working as a Graduate Student Instructor for the Introduction to Statistics and Data Analysis undergraduate course (STATS 250). I've thoroughly enjoyed this aspect of my time as a graduate student, and would love to incorporate teaching into my work life from here on out. Some of the most interesting and influential people in my life are highschool teachers, and I would love to one day fill those shoes.
+While completing my studies at The University of Michigan, I have had the pleasure of working as a Graduate Student Instructor for the Introduction to Statistics and Data Analysis undergraduate course (STATS 250). I've thoroughly enjoyed this aspect of my time as a graduate student, and would love to incorporate teaching into my work life from here on out. Some of the most interesting and influential people in my life are high school teachers, and I would love to one day fill those shoes.
 
 ### Personal Life
 
