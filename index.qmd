@@ -31,7 +31,7 @@ visualizations, reveal patterns and drive more effective decision-making and bus
 
 My research experience is rather broad. While an undergraduate student, I was fortunate enough to work under three different professors in various fields. First, I applied econometric methods to explore the dynamic connectedness of various currencies. Next, I assisted in the development of a mixed-integer linear model aimed to optimally locate emergency service vehicles. And lastly, I built deep neural network models to forecast the spread of infection diseases using trending Google Search key words. 
 
-Currently, I am collaborating with NASA's Langley Research Center, developing methods to improve the performance of their open-source Sequential Monte Carlo Sampler library ((SMCPy))[https://github.com/nasa/SMCPy].
+Currently, I am collaborating with NASA's Langley Research Center, developing methods to improve the performance of their open-source Sequential Monte Carlo Sampler library [(SMCPy)](https://github.com/nasa/SMCPy).
 
 ### Teaching
 
