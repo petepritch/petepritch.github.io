@@ -15,7 +15,7 @@ css: styles.css
 
 # Experience
 
-### Student Researcher
+### Student Researcher, NASA
 **Ann Arbor, MI** | *January 2025 - May 2025*
 
 - Enhanced performance of NASA’s Sequential Monte Carlo Sampler library by developing new features with JAX and BlackJax, rewriting outdated code, and implementing gradient-accelerated forward kernels suited for high-performance computing clusters, significantly improving computational efficiency
