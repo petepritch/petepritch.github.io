@@ -28,5 +28,8 @@
   },
   "projects/peptide/index.qmd": {
     "index.html": "7dff8b86"
+  },
+  "projects/smcpy/index.qmd": {
+    "index.html": "63f0f541"
   }
 }

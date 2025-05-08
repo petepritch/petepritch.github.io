@@ -1,0 +1,12 @@
+---
+title: "SMCPy"
+description: |
+    SMCPy is an open-source package for performing uncertainty quantification using a parallelized sequential Monte Carlo sampler.
+date: 2025-05-01
+image: smcpy.png
+draft: false
+--- 
+
+[![](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/nasa/SMCPy)
+
+I've been actively working with NASA Langley on developing improvements to their Sequential Monte Carlo sampler - specifically for finite element modeling applications. My contributions primarly focus on theoretical and development iprovements to the foward kernels of the SMC mutation step by implementing gradient-accelerated features suited for high-performance computing clusters. 

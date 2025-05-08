@@ -2,6 +2,7 @@
   {
     "listing": "/projects.html",
     "items": [
+      "/projects/smcpy/index.html",
       "/projects/peptide/index.html",
       "/projects/marcy/index.html",
       "/projects/pomp/index.html",
